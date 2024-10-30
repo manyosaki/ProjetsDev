@@ -1,0 +1,40 @@
+.block1{
+    background-color: violet;
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+
+.fond1{
+    background-color: white;
+    text-align: center;
+}
+
+
+.fond2{
+    background-color: white;
+}
+
+.block2{
+    margin-left: 20px;
+    height: 200px;
+    width: 150px;
+    background-color: lavender;
+    float: right;
+}
+
+.block3{
+    margin-left: 20px;
+    height: 100px;
+    width: 150px;
+    background-color: yellowgreen;
+    clear: both;
+}
+
+.fleurs{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    position: absolute;
+}
