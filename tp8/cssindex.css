@@ -1,0 +1,55 @@
+h1{
+    color: #FFB6C1; /* Rose pastel /
+    font-family: Arial, sans-serif;
+}
+
+/ Style du tableau /
+table {
+    width: 60%;
+    border-collapse: collapse
+    background-color: #FFEBEF; / Fond rose pastel /
+    border: 2px solid #FFB6C1;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/ Style des cellules /
+table td {
+    padding: 10px;
+    border: 1px solid #FFB6C1;
+    text-align: center;
+}
+
+/ Style des boutons /
+button {
+    background-color: #FFB6C1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #FF91A4;
+}
+
+/ Style des champs de texte et nombres /
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #FFB6C1;
+    border-radius: 3px;
+}
+
+/ Style du lien de retour */
+a {
+    color: #FFB6C1;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #FF91A4;
+}
