@@ -1,0 +1,51 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif; /* Police simple et lisible */
+    background-color: #ffe6f7; /* Rose pâle pour le fond */
+    margin: 0;
+    padding: 0;
+}
+
+/* Centrer le contenu */
+center {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Style du titre principal */
+h1 {
+    font-size: 2.5em;
+    color: #ff66b2; /* Rose vif pour le titre */
+    margin-bottom: 20px;
+}
+
+/* Style des liens */
+a {
+    text-decoration: none; /* Enlever le soulignement des liens */
+    color: #ff66b2; /* Rose vif pour les liens */
+    font-size: 1.2em;
+    margin: 10px;
+    display: inline-block; /* Pour que les liens soient sur la même ligne */
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ff66b2; /* Bordure rose vif */
+}
+
+/* Effet au survol des liens */
+a:hover {
+    background-color: #ff66b2; /* Fond rose vif */
+    color: white; /* Changer la couleur du texte au survol */
+}
+
+/* Style du titre "Retour" */
+h2 a {
+    font-size: 1.5em;
+    color: #ff66b2;
+    margin-top: 30px;
+}
+
+/* Effet au survol du lien "Retour" */
+h2 a:hover {
+    color: #ff3399; /* Un rose plus foncé */
+}
