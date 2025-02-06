@@ -1,0 +1,184 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3ec;
+    color: #4f4a43;
+}
+
+/* Container */
+.facture-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.facture-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #e2d5c5;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.facture-header h1 {
+    font-size: 24px;
+    color: #8e7d6f;
+    margin: 0;
+}
+
+.facture-header p {
+    font-size: 14px;
+    color: #b5a58d;
+    margin: 5px 0;
+}
+
+.facture-title h2 {
+    font-size: 36px;
+    color: #8e7d6f;
+    margin: 0;
+}
+
+#date-facture {
+    font-size: 16px;
+    color: #b5a58d;
+}
+
+/* Infos Section */
+.facture-infos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.facture-infos div {
+    width: 45%;
+}
+
+.facture-infos h3 {
+    font-size: 18px;
+    color: #8e7d6f;
+    margin-bottom: 10px;
+}
+
+.facture-infos p {
+    font-size: 14px;
+    color: #4f4a43;
+    margin: 5px 0;
+}
+
+/* Table */
+.facture-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.facture-table th, .facture-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2d5c5;
+}
+
+.facture-table th {
+    background-color: #f3e9d2;
+    font-size: 16px;
+    color: #8e7d6f;
+}
+
+.facture-table td input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #e2d5c5;
+    border-radius: 5px;
+    background-color: #f7f3ec;
+    color: #4f4a43;
+}
+
+.facture-table td input:focus {
+    border-color: #d0b39f;
+}
+
+/* Buttons */
+.facture-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.facture-buttons button {
+    background-color: #f2d1b3;
+    color: #4f4a43;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.facture-buttons button:hover {
+    background-color: #e0b78f;
+}
+
+/* Total Section */
+.facture-total {
+    background-color: #f3e9d2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.facture-total p {
+    font-size: 16px;
+    color: #4f4a43;
+    margin: 10px 0;
+}
+
+.facture-total h3 {
+    font-size: 20px;
+    color: #8e7d6f;
+    margin-top: 20px;
+}
+
+.facture-total input {
+    width: 80px;
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #e2d5c5;
+    border-radius: 5px;
+    background-color: #f7f3ec;
+    color: #4f4a43;
+}
+
+.facture-total input:focus {
+    border-color: #d0b39f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .facture-infos {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .facture-infos div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .facture-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .facture-buttons button {
+        margin-bottom: 10px;
+    }
+}

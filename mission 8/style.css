@@ -1,0 +1,148 @@
+/* Appliquer une image de fond vidéo */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Corps de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f1eb; /* Beige clair de fond */
+    margin: 0;
+    padding: 0;
+    color: #4f4f4f; /* Gris foncé pour le texte */
+    overflow-x: hidden;
+}
+
+/* Conteneur principal */
+.content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fond blanc pour l'épure */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #6c6a63; /* Gris doux */
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Style des tableaux */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    font-size: 1rem;
+    border-bottom: 1px solid #e0ded7; /* Gris clair pour les bordures */
+}
+
+th {
+    background-color: #f2f0eb; /* Beige doux pour les en-têtes */
+    font-weight: 600;
+    color: #6c6a63;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+button {
+    background-color: #c8bca1; /* Beige légèrement plus foncé pour les boutons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #b7a891; /* Gris beige au survol */
+    transform: scale(1.05); /* Petit effet de zoom */
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Boîtes de code */
+.code-box {
+    display: none;
+    background-color: #f4f1eb; /* Fond beige clair pour le code */
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: #4f4f4f;
+    white-space: pre-wrap;
+}
+
+pre {
+    margin: 0;
+}
+
+/* Animation d'apparition du code */
+.code-box {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.code-box:active {
+    opacity: 1;
+}
+
+/* Effets au survol des lignes */
+tr:hover {
+    background-color: #f2f0eb; /* Survol beige clair */
+}
+
+/* Style du texte ajustable */
+#texte {
+    font-size: 16px;
+    font-weight: 300;
+    color: #4f4f4f;
+}
+
+/* Style des paragraphes */
+p {
+    font-size: 1rem;
+    color: #4f4f4f;
+}
+
+/* Style du compteur */
+#compteur {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #c8bca1;
+}
+
+/* Style des messages d'alerte */
+.alert {
+    background-color: #f2f0eb; /* Beige doux pour l'alerte */
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #6c6a63;
+    text-align: center;
+}
+

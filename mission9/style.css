@@ -1,0 +1,185 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f0e6; /* Beige doux */
+    color: #5f4b3e; /* Gris chaud pour le texte */
+}
+
+/* Container */
+.facture-container {
+    max-width: 950px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.facture-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e0d1b3; /* Ligne légère et chaude */
+    padding-bottom: 20px;
+}
+
+.facture-header h1 {
+    font-size: 28px;
+    color: #9e8c6c; /* Couleur chaude pour le titre */
+    margin: 0;
+}
+
+.facture-header p {
+    font-size: 14px;
+    color: #b7a48a; /* Gris doux pour les petites informations */
+    margin: 5px 0;
+}
+
+.facture-title h2 {
+    font-size: 36px;
+    color: #9e8c6c; /* Même couleur que le titre */
+    margin: 0;
+}
+
+#date-facture {
+    font-size: 16px;
+    color: #b7a48a;
+}
+
+/* Infos Section */
+.facture-infos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.facture-infos div {
+    width: 45%;
+}
+
+.facture-infos h3 {
+    font-size: 18px;
+    color: #9e8c6c;
+    margin-bottom: 10px;
+}
+
+.facture-infos p {
+    font-size: 14px;
+    color: #5f4b3e;
+    margin: 5px 0;
+}
+
+/* Table */
+.facture-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.facture-table th, .facture-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0d1b3;
+}
+
+.facture-table th {
+    background-color: #f3e4c1; /* Légère couleur beige pour l'en-tête */
+    font-size: 16px;
+    color: #9e8c6c;
+}
+
+.facture-table td input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #e0d1b3;
+    border-radius: 5px;
+    background-color: #f8f2e1; /* Fond beige clair pour les champs */
+    color: #5f4b3e;
+}
+
+.facture-table td input:focus {
+    border-color: #c9a76a; /* Légère bordure dorée au focus */
+    outline: none;
+}
+
+/* Buttons */
+.facture-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.facture-buttons button {
+    background-color: #d7b89a; /* Beige doux et chaleureux */
+    color: #5f4b3e;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.facture-buttons button:hover {
+    background-color: #b99a7d; /* Légère variation de couleur au survol */
+}
+
+/* Total Section */
+.facture-total {
+    background-color: #f3e4c1;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+.facture-total p {
+    font-size: 16px;
+    color: #5f4b3e;
+    margin: 12px 0;
+}
+
+.facture-total h3 {
+    font-size: 20px;
+    color: #9e8c6c;
+    margin-top: 20px;
+}
+
+.facture-total input {
+    width: 80px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #e0d1b3;
+    border-radius: 5px;
+    background-color: #f8f2e1;
+    color: #5f4b3e;
+}
+
+.facture-total input:focus {
+    border-color: #c9a76a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .facture-infos {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .facture-infos div {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .facture-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .facture-buttons button {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QCM BTS SIO</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Appliquer box-sizing globalement */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Vidéo en fond */
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif; /* Ajouter une police lisible */
+      overflow: hidden; /* Désactiver le défilement global de la page */
+    }
+
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Assure que la vidéo couvre tout l'écran */
+      z-index: -1; /* Placer la vidéo derrière tout le contenu */
+    }
+
+    /* Style du QCM */
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 2.5em;
+      margin-top: 20px;
+    }
+
+    #qcm-form {
+      width: 80%; /* Formulaire plus large */
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+      color: white;
+      border-radius: 15px;
+      box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8); /* Légère lueur blanche */
+      overflow-y: auto; /* Permet le défilement dans le formulaire */
+      max-height: 90vh; /* Limiter la hauteur du formulaire */
+    }
+
+    /* Bordure néon autour du div de questions */
+    .question {
+      border: 2px solid #000; /* Bordure noire */
+      border-radius: 5px;
+      padding: 15px;
+      margin: 15px 0;
+      box-shadow: 0 0 5px 3px rgb(255, 255, 255); /* Effet néon noir autour */
+    }
+
+    /* Boutons */
+    .actions {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: 2px solid #000;
+      cursor: pointer;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #555;
+      box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Vidéo en fond -->
+  <video class="video-background" autoplay loop muted>
+    <source src="FD.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la vidéo.
+  </video>
+
+  <h1>QCM : BTS SIO</h1>
+  <form id="qcm-form">
+    <fieldset>
+      <legend>Questions du QCM</legend>
+
+      <!-- Question 1 -->
+      <div class="question">
+        <p>1. De quelle couleur est le ciel</p>
+        <label><input type="radio" name="q1" value="1"> Bleu</label><br>
+        <label><input type="radio" name="q1" value="0"> Rose</label><br>
+        <label><input type="radio" name="q1" value="0"> Beige</label>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p>2.Qui est le président de la France </p>
+        <label><input type="radio" name="q2" value="1"> Emmanuel Macron</label><br>
+        <label><input type="radio" name="q2" value="0"> Jacques Chirac</label><br>
+        <label><input type="radio" name="q2" value="0"> Francois Mitterand</label>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p>3. Comment dire Bonjour en anglais</p>
+        <label><input type="radio" name="q3" value="1"> Good morning</label><br>
+        <label><input type="radio" name="q3" value="0"> Hello</label><br>
+        <label><input type="radio" name="q3" value="0"> Good-Bye</label>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question">
+        <p>4.Quel est l'age de la majorité en France </p>
+        <label><input type="radio" name="q4" value="1"> 18ans</label><br>
+        <label><input type="radio" name="q4" value="0"> 21ans</label><br>
+        <label><input type="radio" name="q4" value="0"> 19ans</label>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question">
+        <p>5. hhhhhhhhhhhhhhh</p>
+        <label><input type="radio" name="q5" value="1"> sssssssssssssssss</label><br>
+        <label><input type="radio" name="q5" value="0"> ssssssssssssssssss</label><br>
+        <label><input type="radio" name="q5" value="0"> sssssssssssssssssss</label>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="question">
+        <p>6. iiiiiiiiiiiiii ?</p>
+        <label><input type="radio" name="q6" value="1"> llllllllllll</label><br>
+        <label><input type="radio" name="q6" value="0"> lllllllllllllllll</label><br>
+        <label><input type="radio" name="q6" value="0"> mmmmmmmmmmm</label>
+      </div>
+
+      <!-- Question 7 -->
+      <div class="question">
+        <p>7. nnnnnnnnnnnnnn</p>
+        <label><input type="radio" name="q7" value="1"> nnnnnnnn</label><br>
+        <label><input type="radio" name="q7" value="0"> zzzzzzzzzzzzz</label><br>
+        <label><input type="radio" name="q7" value="0"> zzzzzzzzz</label>
+      </div>
+
+      <!-- Question 8 -->
+      <div class="question">
+        <p>8. ssssssssssssss</p>
+        <label><input type="radio" name="q8" value="1"> nnnnnnnnnn</label><br>
+        <label><input type="radio" name="q8" value="0">nnnnnn</label><br>
+        <label><input type="radio" name="q8" value="0"> ooooooooooo</label>
+      </div>
+
+      <!-- Question 9 -->
+      <div class="question">
+        <p>9. lllllll</p>
+        <label><input type="radio" name="q9" value="1"> HTTPS chiffre les données échangées</label><br>
+        <label><input type="radio" name="q9" value="0"> HTTP est plus rapide</label><br>
+        <label><input type="radio" name="q9" value="0"> HTTPS est moins sécurisé</label>
+      </div>
+
+      <!-- Question 10 -->
+      <div class="question">
+        <p>10. Quel est l'objectif du responsive design en développement web ?</p>
+        <label><input type="radio" name="q10" value="1"> Créer des interfaces web responsives</label><br>
+        <label><input type="radio" name="q10" value="0"> Optimiser le temps de chargement des pages</label><br>
+        <label><input type="radio" name="q10" value="0"> Améliorer la sécurité des sites web</label>
+      </div>
+    </fieldset>
+
+    <div class="actions">
+      <button type="button" id="btn-correction">Correction</button>
+      <button type="button" id="btn-corrige">Afficher le Corrigé</button>
+      <button type="button" id="btn-effacer">Effacer</button>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
